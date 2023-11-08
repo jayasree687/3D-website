@@ -19,7 +19,59 @@
       <div id="ar-prompt">
           <img src="ar_hand_prompt.png">
       </div>
-    </model-viewer>  
+    </model-viewer>
+    <script>
+    
+    const models = ['1.glb', '2.glb', '3.glb', '4.glb','5.glb','6.glb','7.glb','8.glb','9.glb','10.glb'];
+    const toggleModel = document.querySelector('#toggle-model');
+    // let j = 0;
+    // setInterval(() => toggleModel.setAttribute('src', `${models[j++ % 2]}`), 2000);
+    function switchSrc(indx,src){
+        // if(indx == 2){
+        //     document.getElementById("iitpl").style.setProperty('display','none');
+        //     document.getElementById("tna").style.setProperty('display','none');
+        //     document.getElementById("Brochure").style.setProperty('display','inline');
+        //     document.getElementById("tna2").style.setProperty('display','inline');
+        //     document.getElementById("tna2").style.setProperty('float','right');
+        // }else if(indx== 3){
+        //     document.getElementById("iitpl").setAttribute('style','display:inline');
+        //     document.getElementById("tna").setAttribute('style','display:inline');
+        //     document.getElementById("tna").style.setProperty('float','right');
+        //     document.getElementById("Brochure").setAttribute('style','display:none');
+        //     document.getElementById("tna2").setAttribute('style','display:none');
+        // }else if(indx== 5){
+        //     document.getElementById("iitpl").setAttribute('style','display:inline');
+        //     document.getElementById("tna").setAttribute('style','display:inline');
+        //     document.getElementById("tna").style.setProperty('float','right');
+        // }
+                document.getElementById("1").style.setProperty('display','none');
+                document.getElementById("2").style.setProperty('display','none');
+                document.getElementById("3").style.setProperty('display','none');
+                document.getElementById("4").style.setProperty('display','none');
+                document.getElementById("5").style.setProperty('display','none');
+                document.getElementById("6").style.setProperty('display','none');
+                document.getElementById("7").style.setProperty('display','none');
+                document.getElementById("8").style.setProperty('display','none');
+                document.getElementById("9").style.setProperty('display','none');
+                document.getElementById("10").style.setProperty('display','none');
+        switch (indx) {
+            case 2:  
+                document.getElementById("2").style.setProperty('display','inline');
+		            document.getElementById("2").style.setProperty('float','left');
+                document.getElementById("3").style.setProperty('display','inline');
+	            	document.getElementById("3").style.setProperty('float','right');
+                
+                break;
+    
+            default:
+                document.getElementById("1").style.setProperty('display','none');
+                document.getElementById("2").style.setProperty('display','inline');
+                document.getElementById("2").style.setProperty('float','right');
+            break;
+        }
+        toggleModel.setAttribute('src', `${src}`);  
+    }
+</script>
     <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
