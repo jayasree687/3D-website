@@ -15,7 +15,7 @@ const camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.inner
 camera.position.set( 0, 1, 10 );
 
 const loader = new GLTFLoader();
-loader.load('shiba.glb', function(gltf) {scene.add(gltf.scene);})
+loader.load('Room_1.glb', function(gltf) {scene.add(gltf.scene);})
 
 const light1 = new THREE.PointLight( 0xffffff, 20, 100 );
 light1.position.set( 50, 30, 50 );
