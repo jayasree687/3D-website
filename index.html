@@ -11,7 +11,7 @@
     <!-- <model-viewer> HTML element -->
     <model-viewer id="toggle-model" src="Room_1.glb"  ar camera-controls poster="poster.webp" disable-pan id="hotspot-camera-view-demo" disable-tap disable-zoom alt="Thor and the Midgard Serpent" touch-action="none" interpolation-decay="200" camera-target="-0.003m 0.0722m 0.0391m" camera-orbit="-8.142746deg 68.967deg 0.6179899m" field-of-view="45deg" min-camera-orbit="auto auto 5%" min-field-of-view="25deg" max-field-of-view="45deg">
       <button class="slide selected" id="1" onclick="switchSrc(1,'Room_1.glb')"></button>
-        <button class="slide" id="2" onclick="switchSrc(2,'Carm.glb')" style="float:right;"><img src="Right.png" id="youtube-icon" style="width:40px;height:40px;"></button>
+        <button class="slide" id="2" onclick="switchSrc(2,'Room_2.glb')" style="float:right;"><img src="Right.png" id="youtube-icon" style="width:40px;height:40px;"></button>
         <span><button class="slide selected" id="3" onclick="switchSrc(3,'C-arms_animation.glb')"  style="display: none;"><img src="Left.png" id="youtube-icon" style="width:40px;height:40px;"></button>
         <button class="slide" onclick="switchSrc(4,'Blood analyzer_Back_2.glb')" id="4" style="float: right;display: none;"><img src="Right.png" id="youtube-icon" style="width:40px;height:40px;"></button></span>
         <button class="slide selected" id="5" onclick="switchSrc(5,'Robot_surgarey_with animation.glb')"  style="display: none;"><img src="Left.png" id="youtube-icon" style="width:40px;height:40px;"></button>
@@ -28,7 +28,7 @@
     
 <script>
     
-    const models = ['Room_1.glb', 'Carm.glb', 'C-arms_animation.glb', 'Blood analyzer_Back_2.glb','Robot_surgarey_with animation.glb','6.glb','7.glb','8.glb','9.glb','10.glb'];
+    const models = ['Room_1.glb', 'Room_2.glb', 'C-arms_animation.glb', 'Blood analyzer_Back_2.glb','Robot_surgarey_with animation.glb','6.glb','7.glb','8.glb','9.glb','10.glb'];
     const toggleModel = document.querySelector('#toggle-model');
     // let j = 0;
     // setInterval(() => toggleModel.setAttribute('src', `${models[j++ % 2]}`), 2000);
