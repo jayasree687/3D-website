@@ -23,7 +23,7 @@
                 style="position: relative;Left: 0px;top: 0px;"><img src="Right.png" id="youtube-icon"
                     style="width:40px;height:40px;"></button>
             <span><button class="slide selected" id="3" onclick="switchSrc(3,'Room_3.glb')"
-                    style="display: none;position: relative;Right: 00px;top: 0px;"><img src="Left.png" id="youtube-icon"
+                    style="display: none;position: relative;Right: 50px;top: 0px;"><img src="Left.png" id="youtube-icon"
                         style="width:40px;height:40px;"></button>
                 <button class="slide" onclick="switchSrc(4,'Room_4.glb')" id="4"
                     style="float: right;display: none;position: relative;Right: 100px;top: 0px;"><img src="Right.png" id="youtube-icon"
@@ -79,27 +79,49 @@
 
                     break;
                 case 3:
-                    document.getElementById("3").setAttribute('style', 'display:none');
-                    document.getElementById("3").style.setProperty('float', 'left');
-
+                    document.getElementById("3").style.setProperty('display', 'inline');
+                    document.getElementById("3").style.setProperty('float', 'right');
                     document.getElementById("4").setAttribute('style', 'display:inline');
                     document.getElementById("4").style.setProperty('float', 'right');
+                    document.getElementById("5").setAttribute('style', 'display:inline');
+                    document.getElementById("5").style.setProperty('float', 'right');
+                    document.getElementById("6").setAttribute('style', 'display:inline');
+                    document.getElementById("6").style.setProperty('float', 'right');
+
 
                     break;
                 case 4:
-                    document.getElementById("4").setAttribute('style', 'display:none');
+                    document.getElementById("3").style.setProperty('display', 'inline');
+                    document.getElementById("3").style.setProperty('float', 'right');
+                    document.getElementById("4").setAttribute('style', 'display:inline');
+                    document.getElementById("4").style.setProperty('float', 'right');
                     document.getElementById("5").setAttribute('style', 'display:inline');
                     document.getElementById("5").style.setProperty('float', 'right');
-                    break;
-                case 5:
-                    document.getElementById("5").setAttribute('style', 'display:none');
                     document.getElementById("6").setAttribute('style', 'display:inline');
                     document.getElementById("6").style.setProperty('float', 'right');
+
+                    break;
+                case 5:
+                    document.getElementById("3").style.setProperty('display', 'inline');
+                    document.getElementById("3").style.setProperty('float', 'right');
+                    document.getElementById("4").setAttribute('style', 'display:inline');
+                    document.getElementById("4").style.setProperty('float', 'right');
+                    document.getElementById("5").setAttribute('style', 'display:inline');
+                    document.getElementById("5").style.setProperty('float', 'right');
+                    document.getElementById("6").setAttribute('style', 'display:inline');
+                    document.getElementById("6").style.setProperty('float', 'right');
+
                     break;
                 case 6:
-                    document.getElementById("6").setAttribute('style', 'display:none');
-                    document.getElementById("7").setAttribute('style', 'display:inline');
-                    document.getElementById("7").style.setProperty('float', 'right');
+                    document.getElementById("3").style.setProperty('display', 'inline');
+                    document.getElementById("3").style.setProperty('float', 'right');
+                    document.getElementById("4").setAttribute('style', 'display:inline');
+                    document.getElementById("4").style.setProperty('float', 'right');
+                    document.getElementById("5").setAttribute('style', 'display:inline');
+                    document.getElementById("5").style.setProperty('float', 'right');
+                    document.getElementById("6").setAttribute('style', 'display:inline');
+                    document.getElementById("6").style.setProperty('float', 'right');
+
                     break;
                 case 7:
                     document.getElementById("7").setAttribute('style', 'display:none');
