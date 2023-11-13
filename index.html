@@ -58,8 +58,18 @@
                     src="Right.png" id="youtube-icon" style="width:40px;height:40px;"></button>
             <button onclick="play_to_end()" style="position:25px;display: none;"><img src="play.png" id="youtube-icon"
                     style="width:40px;height:40px; position: sticky; left: 50px;display: none;"></button>
+         <div class="mwc-switch-wrapper">
+      <mwc-switch id="toggleHotspots" style="position: relative;"><span>Show annotations</span></mwc-switch>
+    </div>
             <img src="one.png" id="tagsImage" style="display: none;"/>
     </model-viewer>
+     <script type="module">
+    
+    toggleHotspots.addEventListener('change', () => {
+      modelViewer.classList.toggle('show-hotspots', toggleHotspots.checked);
+    });
+    
+  </script>
 
     <script>
 
