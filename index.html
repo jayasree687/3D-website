@@ -140,10 +140,13 @@
 <body>
     <!-- <model-viewer> HTML element -->
     <model-viewer id="toggle-model" src="Room_1.glb" src="one.png" ar camera-controls poster="poster.webp" disable-pan
-        id="toggle-model" disable-tap disable-zoom alt="Thor and the Midgard Serpent" touch-action="none"
+        id="hotspot-camera-view-demo" disable-tap disable-zoom alt="Thor and the Midgard Serpent" touch-action="none"
         interpolation-decay="200" camera-target="-0.003m 0.0722m 0.0391m" class="show-hotspots"
         camera-orbit="-8.142746deg 68.967deg 0.6179899m" field-of-view="45deg" min-camera-orbit="auto auto 5%"
         min-field-of-view="25deg" max-field-of-view="45deg">
+        <button class="view-button" slot="hotspot-0" data-position="-0.0569m 0.0969m -0.1398m" data-normal="-0.5829775m 0.2863482m -0.7603565m" data-orbit="-50.94862deg 84.56856deg 0.06545582m" data-target="-0.04384604m 0.07348397m -0.1213202m">
+    The Fighters
+  </button>  
         <button class="slide selected" id="1" onclick="switchSrc(1,'Room_1.glb')"
             style="display: none;position: relative;Right: 0px;top: 0px;"><img src="Right.png" id="youtube-icon"
                 style="width:40px;height:40px;"></button>
@@ -340,7 +343,7 @@
     <!--   <script type="module" src="https://unpkg.com/@polymer/paper-toggle-button@3.0.1/paper-toggle-button.js?module"></script> -->
   <script type="module" src="https://unpkg.com/@material/mwc-switch@0.14.1/mwc-switch.js?module"></script>
     <script type="module">
-  const modelViewer2 = document.querySelector("#toggle-model");
+  const modelViewer2 = document.querySelector("#hotspot-camera-view-demo");
   const annotationClicked = (annotation) => {
     let dataset = annotation.dataset;
     modelViewer2.cameraTarget = dataset.target;
