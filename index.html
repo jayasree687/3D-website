@@ -166,7 +166,7 @@
                     src="four.png" id="youtube-icon" style="width:40px;height:40px;"></button>
             <button class="slide selected" id="7" onclick="switchSrc(7,'7.glb')" style="display: none;position: relative;Right: 250px;top: 0px;"><img
                     src="Left.png" id="youtube-icon" style="width:40px;height:40px;"></button>
-            <button class="slide" onclick="addTags('one.png')" id="8" style="float: right;display: none;position: relative;Right:0px;top: 0px;"><img
+            <button class="slide" onclick="addscene('8,Tags_1.fbx')" id="8" style="float: right;display: none;position: relative;Right:0px;top: 0px;"><img
                     src="tags.png" id="youtube-icon" style="width:200px;height:50px;"></button>
             <button class="slide selected" id="9" onclick="switchSrc(9,'9.glb')" style="display: none;position: relative;Right:0  px;top: 0px;"><img
                     src="hotspot.png" id="youtube-icon" style="width:200px;height:50px;"></button>
@@ -204,7 +204,7 @@
 
     <script>
 
-        const models = ['Room_1.glb', 'Room_2.glb', 'Room_3.glb', 'Room_4.glb', 'Room_5.glb', 'Room_6.glb', '7.glb', 'one.png', '9.glb', '10.glb'];
+        const models = ['Room_1.glb', 'Room_2.glb', 'Room_3.glb', 'Room_4.glb', 'Room_5.glb', 'Room_6.glb', '7.glb', 'one.png', '9.glb', '10.glb','Tags_1'];
         const toggleModel = document.querySelector('#toggle-model');
         function switchSrc(indx, src) {
             document.getElementById("1").style.setProperty('display', 'none');
